@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></head>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Action</td>
+            <td>Output</td>
+        </tr>
+        <tr>
+            <td>Dice</td>
+            <td><img src="images/dice.gif" width="15%" onclick="Roll()"></td>
+            <td id="o1"></td>
+        </tr>
+        <tr>
+            <td>OTP</td>
+            <td><button onclick="OTP()">click me</button></td>
+            <td id="o2"></td>
+        </tr>
+        <tr>
+            <td>Dinner menu</td>
+            <td><button onclick="Dinner()">click me</button></td>
+            <td id="o3"></td>
+        </tr>
+        <tr>
+            <td>Rock Paper Scissors</td>
+            <td>
+                <button onclick="RPS(1)" type="button">Rock</button>
+                <button onclick="RPS(2)" type="button">Paper</button>
+                <button onclick="RPS(3)" type="button">Scissors</button>            
+            </td>
+            <td id="o4"></td>
+        </tr>
+        <tr>
+            <td>Today's Quotes</td>
+            <td><button onclick="Quotes()">Click Me</button></td>
+            <td id="o5"></td>
+        </tr>
+        <tr>
+            <td>Password Generator</td>
+            <td><button onclick="password()">Click Me</button></td>
+            <td id="o6"></td>
+        </tr>
+    </table>
+    <!-- <script>
+        function Dice(){
+            let x=Math.floor(Math.random()*6)+1;
+            document.querySelector('#o1').innerHTML=`<img src='images/${x}.jpg'  width='15%'>`
+        }
+    </script>
+    <script>
+        function OTP(){
+            let x=Math.floor(Math.random()*(99999-12345))+12345;
+            document.querySelector('#o2').innerText =x;
+        }
+    </script>
+    <script>
+        function Todaysmenu(){
+            let menu=['chole bhature','rajma rice','pau bhaji','dosa','kadhi rice','aloo puri','pasta','milk shake']
+            let l=menu.length;
+            let x=Math.floor(Math.random()*l);
+            document.querySelector('#o3').innerText =menu[x];
+        }
+    </script>
+     <script>
+        function RPS(){
+            let comp = Math.floor(Math.random()*3)+1;
+            console.log(comp);
+            if(user==comp)
+                document.querySelector('#o4').innerText ="Tie";
+            else if(user==1&&comp==2 || user==3 && comp == 1 || user == 2 && comp == 3)
+                document.querySelector('#o4').innerText ='Computer Win'
+            else
+                document.querySelector('#o4').innerText = 'User Win';
+        }
+    </script>
+    <script>
+         function Quotes(){
+            let menu = ['A rose by any other name would smell as sweet.','All that glitters is not gold.','Eighty percent of success is showing up.','Elementary, my dear Watson.','Go ahead, make my day.','Hell is other people.','Houston, we have a problem.'];
+            let l = menu.length;
+            let x = Math.floor(Math.random()*l);
+            document.querySelector('#o5').innerText = menu[x];
+        }
+    </script>
+    <script>
+         function password(){
+            let d = Math.floor(Math.random()*(99-10)+1)+10;
+            let c1 = Math.floor(Math.random()*(122-97+1))+97;
+            let c2 = Math.floor(Math.random()*(122-97+1))+97;
+            let c3 = Math.floor(Math.random()*(122-97+1))+97;
+            let s = Math.floor(Math.random()*(47-33+1))+33;
+            document.querySelector('#o6').innerText = String.fromCharCode(c1)+String.fromCharCode(s)+d+String.fromCharCode(c2)+String.fromCharCode(c3);
+        }
+    </script> -->
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
